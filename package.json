@@ -1,0 +1,35 @@
+{
+  "name": "envoy-plugin-example-access-control",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/envoy/envoy-plugin-example-access-control.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/envoy/envoy-plugin-example-access-control/issues"
+  },
+  "homepage": "https://github.com/envoy/envoy-plugin-example-access-control#readme",
+  "dependencies": {
+    "@envoy/envoy-integrations-sdk": "^1.0.0",
+    "@envoy/envoy-integrations-helper-nodejs": "^1.0.0",
+    "axios": "^0.19.2",
+    "eslint": "^7.22.0",
+    "express": "^4.17.1",
+    "moment-timezone": "^0.5.31",
+    "parse-full-name": "^1.2.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2"
+  }
+}
