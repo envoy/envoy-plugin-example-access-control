@@ -48,24 +48,24 @@ You will find the other common events as well that can be configured to fit what
 Within the integration builder, you can granular notifications based on the event, and what user group triggered the event. You can set triggers on events within Envoy to post to your app. We have set up endpoints for the following common events.
 
 #### Invitations
-Endpoint: "https://www.mycustomapp.com/webhook-invite"
+<b>Endpoint:</b> "https://www.mycustomapp.com/webhook-invite"<br>
 
 webhook for when a non-employee invitation is created
 #### Sign-in (Non-Employee)
-Endpoint: "https://www.mycustomapp.com/webhook-sign-in"
+<b>Endpoint:</b> "https://www.mycustomapp.com/webhook-sign-in"<br>
 Triggers when an employee signs-in.
 #### Sign-out (Non-Employee)
-Endpoint: "https://www.mycustomapp.com/webhook-sign-out"
+<b>Endpoint:</b> "https://www.mycustomapp.com/webhook-sign-out"<br>
 Triggers when a non-employee signs-out.
 #### Sign-in (Employee)
-Endpoint: "https://www.mycustomapp.com/webhook-employee-sign-in"
+<b>Endpoint:</b> "https://www.mycustomapp.com/webhook-employee-sign-in"<br>
 Triggers when an employee signs-in.
 #### Sign-out (Employee)
-Endpoint: "https://www.mycustomapp.com/webhook-employee-sign-out"
+<b>Endpoint:</b> "https://www.mycustomapp.com/webhook-employee-sign-out"<br>
 Triggers when an employee signs-out.
 
 #### Full Event Glossary
-If you would like set other event triggers within Envoy, you have the following at your disposal: 
+If you would like set other event triggers within Envoy, you have the following at your disposal:
 <table>
   <thead>
     <tr>
