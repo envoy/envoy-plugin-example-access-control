@@ -43,6 +43,110 @@ For events like sign ins, invitations, and sign outs of both guests and employee
 
 You will find the other common events as well that can be configured to fit what's needed for your application to be synced to Envoy's Access Control.
 
+### Event Glossary
+#### Background
+Within the integration builder, you can granular notifications based on the event, and what user group triggered the event. You can set triggers on events within Envoy to post to your app. We have set up endpoints for the following common events.
+
+#### Invitations
+Endpoint: "https://www.mycustomapp.com/webhook-invite"
+
+webhook for when a non-employee invitation is created
+#### Sign-in (Non-Employee)
+Endpoint: "https://www.mycustomapp.com/webhook-sign-in"
+Triggers when an employee signs-in.
+#### Sign-out (Non-Employee)
+Endpoint: "https://www.mycustomapp.com/webhook-sign-out"
+Triggers when a non-employee signs-out.
+#### Sign-in (Employee)
+Endpoint: "https://www.mycustomapp.com/webhook-employee-sign-in"
+Triggers when an employee signs-in.
+#### Sign-out (Employee)
+Endpoint: "https://www.mycustomapp.com/webhook-employee-sign-out"
+Triggers when an employee signs-out.
+
+#### Full Event Glossary
+If you would like set other event triggers within Envoy, you have the following at your disposal: 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left;">Resource</th>
+      <th style="text-align: left;">Topic</th>
+      <th style="text-align: left;">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left;">Entries</td>
+      <td style="text-align: left;">visitors.entry.sign-in</td>
+      <td style="text-align: left;">Triggers whenever a guest sign-in.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left;">Entries</td>
+      <td style="text-align: left;">visitors.entry.sign-out</td>
+      <td style="text-align: left;">Triggers whenever a guest signs out.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left;">Blocklist</td>
+      <td style="text-align: left;">visitors.entry.block-list.review</td>
+      <td style="text-align: left;">Triggers when a person has been screened by a blocklist rule.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left;">Blocklist</td>
+      <td style="text-align: left;">visitors.entry.block-list.denied</td>
+      <td style="text-align: left;">Triggers when a person has been denied entry by a blocklist rule</td>
+    </tr>
+    <tr>
+      <td style="text-align: left;">Invites</td>
+      <td style="text-align: left;">visitors.invite.created</td>
+      <td style="text-align: left;">Triggers when an invite is created.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left;">Invites</td>
+      <td style="text-align: left;">visitors.invite.updated</td>
+      <td style="text-align: left;">Triggers when an invite is updated.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left;">Invites</td>
+      <td style="text-align: left;">visitors.invite.removed</td>
+      <td style="text-align: left;">Triggers when an invite is deleted.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left;">Invites</td>
+      <td style="text-align: left;">visitors.upcoming.invited.visit</td>
+      <td style="text-align: left;">upcoming_visit</td>
+    </tr>
+    <tr>
+      <td style="text-align: left;">Invites</td>
+      <td style="text-align: left;">visitors.invite.qr.code.sent</td>
+      <td style="text-align: left;">qr_code_sent</td>
+    </tr>
+    <tr>
+      <td style="text-align: left;">Entries</td>
+      <td style="text-align: left;">protect.employee.check-in.created</td>
+      <td style="text-align: left;">Triggers when an employee invite is created.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left;">Entries</td>
+      <td style="text-align: left;">protect.upcoming.employee.on-site</td>
+      <td style="text-align: left;">employee_upcoming_visit</td>
+    </tr>
+    <tr>
+      <td style="text-align: left;">Entries</td>
+      <td style="text-align: left;">protect.employee.entry.sign-in</td>
+      <td style="text-align: left;">Triggers when an employee signs-in.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left;">Entries</td>
+      <td style="text-align: left;">protect.employee.entry.sign-out</td>
+      <td style="text-align: left;">Triggers when an employee signs-out</td>
+    </tr>
+    <tr>
+      <td style="text-align: left;">(Beta) Tickets</td>
+      <td style="text-align: left;">ticket_created</td>
+      <td style="text-align: left;">Triggers when a workplace issue is created. _This feature is currently in beta and may not be available on your account._</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Support
 If you have any questions regarding how to initiate these steps to build an app that fits your business needs, please don't hesitate to reach out to example@envoy.com.
