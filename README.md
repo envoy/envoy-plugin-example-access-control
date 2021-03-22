@@ -14,7 +14,7 @@ This repo is intended to showcase an example middleware with the core components
 ### index.js
 Within the index file off the root, you will find the endpoints that have already been set up for your use, and where those functions are within the library. The routes follow the same flow a user would follow; setup, field pre-population, and on-going events that the application will be handling.
 
-### ./lib/handlers/setupStep/setupStepAuthenticate
+### Setup Step
 You will be using this endpoint for a user who is setting up your new app on Envoy. Using our [Integration Builder](https://developers.envoy.com/hub/docs/integration-builder), you can enter the endpoint "https://www.myapp.com/setup-step-authenticate" as the posting endpoint for intialization which will go through an OAuth2 workflow. The data points passed through would be the following:
 
 1. Client App Key
@@ -24,7 +24,7 @@ You will be using this endpoint for a user who is setting up your new app on Env
 
 From here, you now have context to the user who has installed your app, and you can begin taking requests from that user using Envoy.
 
-### Field Populators
+#### Field Populators
 Authentication steps can be any of the following:
 
 * OAuth2 - a dialog to authenticate with
